@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C61C8E31E0C8F3600EF5BFC /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61C8E21E0C8F3600EF5BFC /* ServiceFactory.swift */; };
+		1C61C8E51E0C90B000EF5BFC /* ServerDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61C8E41E0C90B000EF5BFC /* ServerDiscoveryService.swift */; };
+		1C61C8EB1E0C93D400EF5BFC /* BridgingHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C61C8EA1E0C93C500EF5BFC /* BridgingHeader.h */; };
+		1C61C8ED1E0F93FA00EF5BFC /* RoombaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61C8EC1E0F93FA00EF5BFC /* RoombaService.swift */; };
 		1CF8E8281E0B1F0100B09760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8E8271E0B1F0100B09760 /* AppDelegate.swift */; };
 		1CF8E82A1E0B1F0100B09760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8E8291E0B1F0100B09760 /* ViewController.swift */; };
 		1CF8E82D1E0B1F0100B09760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8E82B1E0B1F0100B09760 /* Main.storyboard */; };
@@ -34,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C61C8E21E0C8F3600EF5BFC /* ServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		1C61C8E41E0C90B000EF5BFC /* ServerDiscoveryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerDiscoveryService.swift; sourceTree = "<group>"; };
+		1C61C8E71E0C92CC00EF5BFC /* TestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		1C61C8EA1E0C93C500EF5BFC /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		1C61C8EC1E0F93FA00EF5BFC /* RoombaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoombaService.swift; sourceTree = "<group>"; };
 		1CF8E8241E0B1F0100B09760 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8E8271E0B1F0100B09760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF8E8291E0B1F0100B09760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C61C8E11E0C8ECD00EF5BFC /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				1C61C8E21E0C8F3600EF5BFC /* ServiceFactory.swift */,
+				1C61C8E41E0C90B000EF5BFC /* ServerDiscoveryService.swift */,
+				1C61C8E71E0C92CC00EF5BFC /* TestApp-Bridging-Header.h */,
+				1C61C8EA1E0C93C500EF5BFC /* BridgingHeader.h */,
+				1C61C8EC1E0F93FA00EF5BFC /* RoombaService.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
 		1CF8E81B1E0B1F0100B09760 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,7 @@
 		1CF8E8261E0B1F0100B09760 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				1C61C8E11E0C8ECD00EF5BFC /* Stores */,
 				1CF8E8271E0B1F0100B09760 /* AppDelegate.swift */,
 				1CF8E8291E0B1F0100B09760 /* ViewController.swift */,
 				1CF8E82B1E0B1F0100B09760 /* Main.storyboard */,
@@ -193,6 +215,7 @@
 				TargetAttributes = {
 					1CF8E8231E0B1F0100B09760 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VW457F58ME;
 					};
 					1CF8E8371E0B1F0100B09760 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C61C8EB1E0C93D400EF5BFC /* BridgingHeader.h in Sources */,
+				1C61C8ED1E0F93FA00EF5BFC /* RoombaService.swift in Sources */,
 				1CF8E82A1E0B1F0100B09760 /* ViewController.swift in Sources */,
 				1CF8E8281E0B1F0100B09760 /* AppDelegate.swift in Sources */,
+				1C61C8E31E0C8F3600EF5BFC /* ServiceFactory.swift in Sources */,
+				1C61C8E51E0C90B000EF5BFC /* ServerDiscoveryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +428,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.meher.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = come.meher.RoombaPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/TestApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +445,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.meher.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = come.meher.RoombaPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/TestApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +522,7 @@
 				1CF8E84E1E0B1F0100B09760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CF8E84F1E0B1F0100B09760 /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +531,7 @@
 				1CF8E8511E0B1F0100B09760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CF8E8521E0B1F0100B09760 /* Build configuration list for PBXNativeTarget "TestAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +540,7 @@
 				1CF8E8541E0B1F0100B09760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
